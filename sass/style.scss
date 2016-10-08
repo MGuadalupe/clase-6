@@ -1,0 +1,199 @@
+@import "reset";
+@import "variables";
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text|Source+Sans+Pro';
+
+@import'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+.secciones{
+	width: 100%;
+}
+.container{
+		width: 1200px;
+		margin: auto;
+	}
+
+	a{
+		color: $gris-oscuro;
+		font-family: $title;
+		text-decoration: none;
+		font-size: 14px;
+	}
+.palabra{
+	color: $gris-claro;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: $title;
+}
+
+.img-text p, .img-text h2, .img-text h3, .img-text h4{
+	color: $color-foto;
+	font-family: $text;
+	text-shadow: 0px 0px 8px  rgba(0,0,0,0.7);
+}
+	 	
+
+header{
+	width:100%;
+
+	
+		.header-sup{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 70px;
+
+			.logo{
+				width: 150px;
+				img{
+					width: 100%;
+				}
+			}
+			.searcher{
+				input{
+					border: 0px;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					color:$gris-claro;
+				}
+			}
+			.carrito ul li{
+				display: inline-block;
+				margin-right: 10px; 
+				font-family: $title;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: 12px;
+				color:$gris-oscuro;
+				&:last-child{
+					margin-right:0px;
+
+				}
+				span{
+						margin-right: 5px;
+						font-size: 15px;
+					}
+				
+			}
+		}
+
+		nav ul{
+				width: 600px;
+				margin: auto;
+				padding-top: 20px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				li{
+				display: inline-block;
+					
+			}
+		}
+
+	
+
+}
+.secciones{
+	 .container{
+	 	margin-top: 100px;
+	 	display: flex;
+	 	justify-content: space-around;
+	 	.containermenu {
+	 		width: 20%;
+	 		
+	 		.palabra{
+	 			margin-bottom: 10px;
+	 		}
+	 		 a{
+
+				color:$gris-claro;
+				
+			}
+
+	 		> a{
+	 			display: inline-block;
+	 			margin: 10px 0px;
+				color: $color-blue;
+				&:last-of-type {
+					color:$gris-oscuro;
+					font-weight: bold;
+				}
+	 		}
+
+	 		ul{ 
+	 			margin-left: 10px;
+	 			li{
+	 				margin-bottom: 10px;
+	 			}
+	 		}
+
+	 		p{
+	 			font-family: $title;
+	 			font-size: 13px;
+	 			color: $gris-oscuro;
+	 			padding: 10px 0px 0px 10px;
+	 		}
+	 	} 
+	 	.containermain{
+	 		
+	 		width: 75%;
+
+	 		.img-nivel1{
+	 		width: 100%;
+	 		background: url(../images/0.jpg);
+	 		background-size: cover;
+
+	 		.ion-chevron-left{
+	 					float: left;
+	 					padding-top: 160px;
+	 					color: $color-foto;
+	 				}
+	 		.ion-chevron-right{
+	 			float: right;
+	 			padding-top: 160px;
+	 			color: $color-foto;
+	 		}
+	 		.img-text{
+	 			padding: 150px 0px 150px 50px; 
+					p{
+	 					font-size: 20px;
+
+	 					}
+	 				h2{
+	 					font-size: 70px;
+	 					
+	 				}
+	 			}
+	 		}
+	 		.img-nivel2{
+	 			display: flex;
+	 			justify-content: space-between;
+	 			
+	 			.img-text{
+	 				width: 40%;
+	 				padding: 80px 40px 80px;
+	 				background-size:cover;
+	 				background-position: center;
+	 				h3{
+	 					font-size: 40px;
+	 				}
+	 				p{
+	 					font-family: $title;
+	 					letter-spacing: 2px;
+	 					font-weight: lighter;
+	 					font-size: 10px;
+	 					text-transform: uppercase;
+	 					padding-top: 30px;
+	 				}
+		 			&:first-child {
+		 				
+			 			background-image:url(../images/home-feature-4.png);
+			 		}
+			 		&:last-child {
+			 			
+			 			background-image:url("../images/chris-del-moro.jpg");
+			 		}
+		 		}
+	 		}
+	 	}
+	}
+}
+
